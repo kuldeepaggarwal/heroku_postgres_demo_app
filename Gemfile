@@ -14,5 +14,6 @@ gem 'twitter',          '~> 5.14.0'
 group :development, :test do
   gem 'byebug',         '~> 4.0.5'
   gem 'web-console',    '~> 2.1.2'
+  gem 'letter_opener',  '~> 1.2.0'
 end
 

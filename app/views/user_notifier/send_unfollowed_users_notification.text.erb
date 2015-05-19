@@ -1,0 +1,6 @@
+<%= @greeting %>,
+
+<%= "#{ @users.count } #{ 'user'.pluralize(@users.count) } unfollowed you." %>
+<% if @users.present? %>
+Names: <%= @users.collect { |user| "#{ user.name }(@#{ user.screen_name })" }.join("\n") %>
+<% end %>
