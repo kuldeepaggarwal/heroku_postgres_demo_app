@@ -31,7 +31,7 @@ class User < ActiveRecord::Base
   end
 
   def requires_unfollowed_users_notification?
-    updated_at >= 1.week.ago
+    updated_at.to_date <= 1.week.ago.to_date
   end
 
   def unfollowed_users(ago: 1.week.ago)
